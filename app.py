@@ -445,13 +445,12 @@ def format_duration_seconds(total_seconds: int) -> str:
         return f"{minutes}m {seconds}s"
     return f"{seconds}s"
 
-
 @app.get("/admin")
 def admin_dashboard():
     state = load_state()
     experiences = load_all_experiences()
 
-    rows = []
+    participant_rows = []
 
     for phone, user in state.items():
         exp_key = user.get("experience_key")
@@ -479,7 +478,7 @@ def admin_dashboard():
             elapsed_seconds = int((datetime.now() - start_dt).total_seconds())
             elapsed_time = format_duration_seconds(elapsed_seconds)
 
-        rows.append({
+        participant_rows.append({
             "phone": phone,
             "experience": exp_key,
             "step_index": user.get("step_index"),
@@ -491,9 +490,41 @@ def admin_dashboard():
             "elapsed_time": elapsed_time,
         })
 
-    return render_template("admin.html", rows=rows)
+    checkpoint_tables = []
 
-@app.post("/admin/reset/<phone>")
+    for key, exp in experiences.items():
+        checkpoint_rows = []
+
+        # 👉 Add start row first
+        checkpoint_rows.append({
+            "number": "Start",
+            "label": "start",
+            "code": exp.get("start_trigger"),
+            "clue": "Start trigger"
+        })
+
+        # 👉 Then normal checkpoints
+        for i, cp in enumerate(exp["checkpoints"], start=1):
+            checkpoint_rows.append({
+                "number": i,
+                "label": cp["label"],
+                "code": cp["code"],
+                "clue": cp["clue"]["text"]
+            })
+
+        checkpoint_tables.append({
+            "name": key,
+            "rows": checkpoint_rows
+        })
+    
+    return render_template(
+        "admin.html",
+        rows=participant_rows,
+        checkpoint_tables=checkpoint_tables
+    )
+
+
+@app.post("/admin/reset/<path:phone>")
 def reset_user(phone):
     state = load_state()
 

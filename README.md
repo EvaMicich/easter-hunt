@@ -9,6 +9,8 @@ A lightweight, event-ready scavenger hunt powered by **WhatsApp**, **Twilio Sand
 
 Participants interact entirely through WhatsApp — scanning QR codes or tapping NFC tags to progress through clues, receive images/videos, and complete the hunt.
 
+<img src = "https://github.com/user-attachments/assets/94f6eece-111f-4030-8e8b-938e21cfd428" width="400" />
+
 ---
 
 ## ✨ Features

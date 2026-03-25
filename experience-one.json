@@ -10,16 +10,16 @@
     "help_text": "Commands:\nRESET — restart your progress\nSTATUS — show the current clue",
     "already_finished_text": "You have already completed what was asked of you.\n\nSend RESET to begin again.",
     "not_started_text": "No active thread detected.\n\nUse the correct opening message to begin.",
-    "wrong_sequence_text": "Not yet.\n\nYou are either ahead of yourself or looking in the wrong place.\n{current_objective}",
-    "unknown_input_text": "That isn't useful to me.\n\n{current_objective}\n\nUse the marker when you find it."
+    "wrong_sequence_text": "Not now.\n\nThis only works if followed in the correct order.\n\n{current_objective}",
+    "unknown_input_text": "That isn't useful to the sequence.\n\n{current_objective}\n\nUse the marker when you find it."
   },
   "start": {
-    "intro_text": "You didn't miss a call.\n\nI only needed to know whether this number still belonged to someone who would answer.\n\nThere are six places on this property that hold on to more than they should. Follow them properly and you'll be allowed to keep what has been set aside at the end.\n\n-------\n"
+    "intro_text": "You didn't miss a call.\n\nThis only works if someone answers.\n\nThere are six places on this property that need to be followed in the correct order. If you move through them properly, you'll reach what has been set aside.\n\n-------\n"
   },
   "finish": {
-    "text": "You followed the line all the way to the room set apart from the house.\n\nGold still catches there. Green leather still remembers where it used to live.\n\nWhat was left for the living is yours now.\n\nTake the eggs.\n\nAnd leave the rest undisturbed.",
+    "text": "You followed it correctly.\n\nAll the way to the room set apart from the house.\n\nGold still catches there. Green leather still remembers where it used to live.\n\nWhat was set aside was always here —\nbut not for everyone.\n\nYou reached it because you followed the sequence.\nExactly.\n\nTake the eggs.\n\nThe rest was never meant for you.",
     "media": {
-      "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V2-finish.mp4",
+      "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V4-finish.mp4",
       "type": "video"
     }
   },
@@ -28,70 +28,70 @@
       "label": "01-monkey-puzzle-tree",
       "code": "teal-lantern-227",
       "clue": {
-        "text": "Begin with the thing that does not quite belong here: ancient, armored, and called by a name that sounds more like a warning than a plant label.\n\nAraucaria araucana.",
+        "text": "LOOK NEXT:\n\nBegin where something does not quite belong.\nAncient. Armored.\nCalled by a name that sounds more like a warning than a plant label.\n\nAraucaria araucana.",
         "media": {
-          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I1-monkey.jpg",
-          "type": "image"
+          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V3-intro.mp4",
+          "type": "video"
         }
       },
-      "success_text": "Yes.\n\nSome things never fully settle, even after years in the ground.\n\n-------\n"
+      "success_text": "FOUND.\n\nGood.\n\nThe first point always feels accidental.\nIt isn't.\n\nThe sequence has started.\n\n-------\n"
     },
     {
       "label": "02-old-chicken-shed-wood-shed",
       "code": "solar-rug-318",
       "clue": {
-        "text": "Now look for a structure that changed duties without losing its shape. Timber rests where life once scratched and nested. A domestic afterlife made of boards, dust, and memory.",
+        "text": "LOOK NEXT:\n\nFind the structure that changed duties without losing its shape.\nTimber rests where life once scratched and nested.\nSomething that still holds its former purpose, even now.",
         "media": {
-          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I4-shed.jpg",
-          "type": "image"
+          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V6-shed.mp4",
+          "type": "video"
         }
       },
-      "success_text": "Correct.\n\n-------\n"
+      "success_text": "FOUND.\n\nCorrect.\n\nIt only works if you move forward from the right place.\n\nMost would miss that.\n\n-------\n"
     },
     {
       "label": "03-old-gum-tree",
       "code": "copper-signal-641",
       "clue": {
-        "text": "Find the oldest authority on the property. Not the house, not the people. The one that has hosted wings and hives and outlasted every plan made around it.",
+        "text": "LOOK NEXT:\n\nFind the oldest authority on the property.\nNot the house.\nNot the people.\n\nThe one that has hosted wings and hives\nand outlasted every plan made around it.",
         "media": {
-          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I3-tree.jpg",
-          "type": "image"
+          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V7-gum.mp4",
+          "type": "video"
         }
       },
-      "success_text": "Good.\n\n-------\n"
+      "success_text": "FOUND.\n\nYou are following correctly.\n\nThere is only one path through this.\n\nYou're still on it.\n\n-------\n"
     },
     {
       "label": "04-round-tree-seat",
       "code": "violet-kernel-904",
       "clue": {
-        "text": "Seek the circle built not around people, but around a trunk. Iron lace. A ring of pause. Something ornamental that feels, on second look, a little too much like containment.",
+        "text": "LOOK NEXT:\n\nSeek the circle built not around people, but around a wooden sentinel.\nIron lace.\nA boundary that doesn't explain itself.\n\nSomething ornamental,\nuntil you realise it isn't meant to be crossed.",
         "media": {
-          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I5-seat.jpg",
-          "type": "image"
+          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V8-chair.mp4",
+          "type": "video"
         }
       },
-      "success_text": "Yes.\n\n-------\n"
+      "success_text": "FOUND.\n\nThis part tends to slow people down.\n\nIt should.\n\nNot everything here is meant to be approached directly.\n\n-------\n"
     },
     {
       "label": "05-bird-house",
       "code": "marzipan-vector-552",
       "clue": {
-        "text": "Find the weathered little settlement raised above the ground. Too many openings. Too much ambition. Less a nest than a small white dwelling built for witnesses.",
+        "text": "LOOK NEXT:\n\nFind the weathered little settlement raised above the ground.\nToo many openings.\nToo many ways in.\n\nLess a nest than a place something could return to,\nagain and again.",
         "media": {
-          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I2-bird.jpg",
-          "type": "image"
+          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V5-house.mp4",
+          "type": "video"
         }
       },
-      "success_text": "You've found it.\n\n-------\n"
+      "success_text": "FOUND.\n\nAlmost there.\n\nIf you've followed it properly,\nyou already know where this leads.\n\n-------\n"
     },
     {
       "label": "06-mums-studio-finish",
       "code": "glow-orbit-808",
       "clue": {
-        "text": "For the last place, go where the house thins out into something more private. Look for the room where gold is worked into holy faces, and where a green leather couch sits slightly out of time, as if it remembers another life indoors.",
+        "text": "LOOK NEXT:\n\nWhere gold is worked into holy faces.\nWhere a green leather place to settle sits slightly out of time,\nas if it remembers another life indoors.",
         "media": {
-          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I6-icon.jpg",
-          "type": "image"
+          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V9-studio.mp4",
+          "type": "video"
         }
       },
       "success_text": ""

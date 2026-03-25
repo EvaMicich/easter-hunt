@@ -34,7 +34,7 @@
   <tr>
     <td>{{ row.phone }}</td>
     <td>{{ row.experience or "" }}</td>
-    <td>{{ row.step_index }}</td>
+    <td>{{ (row.step_index + 1) if row.step_index is not none else "" }}</td>
     <td>{{ row.checkpoint or "" }}</td>
     <td>{{ row.started_at or "" }}</td>
     <td>{{ row.finished_at or "" }}</td>
@@ -62,6 +62,29 @@
   </tr>
   {% endfor %}
 </table>
+
+<h2>🧩 Checkpoints</h2>
+
+{% for table in checkpoint_tables %}
+  <h3>{{ table.name }}</h3>
+  <table>
+    <tr>
+  <th>#</th>
+  <th>Label</th>
+  <th>Code</th>
+  <th>Clue</th>
+</tr>
+
+{% for row in table.rows %}
+<tr>
+  <td>{{ row.number }}</td>
+  <td>{{ row.label }}</td>
+  <td><strong>{{ row.code }}</strong></td>
+  <td>{{ row.clue }}</td>
+</tr>
+{% endfor %}
+  </table>
+{% endfor %}
 
 </body>
 </html>

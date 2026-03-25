@@ -19,7 +19,7 @@
   "finish": {
     "text": "You did it!\n\nFind your eggs 🥚",
     "media": {
-      "url": "https://evamicich.github.io/easter-hunt-assets/videos/E2V2-Close.mp4",
+      "url": "https://evamicich.github.io/easter-hunt-assets/videos/E2V4-Close.mp4",
       "type": "video"
     }
   },
@@ -30,7 +30,7 @@
       "clue": {
         "text": "Do you know?",
         "media": {
-          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E2V1-Intro.mp4",
+          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E2V3-Intro.mp4",
           "type": "video"
         }
       },
