@@ -1,0 +1,100 @@
+{
+  "experience_key": "experience_one",
+  "start_trigger": "Hi, I missed a call from this number",
+  "commands": {
+    "reset": ["reset"],
+    "status": ["status"],
+    "help": ["help", "menu"]
+  },
+  "game": {
+    "help_text": "Commands:\nRESET — restart your progress\nSTATUS — show the current clue",
+    "already_finished_text": "You have already completed what was asked of you.\n\nSend RESET to begin again.",
+    "not_started_text": "No active thread detected.\n\nUse the correct opening message to begin.",
+    "wrong_sequence_text": "Not yet.\n\nYou are either ahead of yourself or looking in the wrong place.\n{current_objective}",
+    "unknown_input_text": "That isn't useful to me.\n\n{current_objective}\n\nUse the marker when you find it."
+  },
+  "start": {
+    "intro_text": "You didn't miss a call.\n\nI only needed to know whether this number still belonged to someone who would answer.\n\nThere are six places on this property that hold on to more than they should. Follow them properly and you'll be allowed to keep what has been set aside at the end.\n\n-------\n"
+  },
+  "finish": {
+    "text": "You followed the line all the way to the room set apart from the house.\n\nGold still catches there. Green leather still remembers where it used to live.\n\nWhat was left for the living is yours now.\n\nTake the eggs.\n\nAnd leave the rest undisturbed.",
+    "media": {
+      "url": "https://evamicich.github.io/easter-hunt-assets/videos/E1V2-finish.mp4",
+      "type": "video"
+    }
+  },
+  "checkpoints": [
+    {
+      "label": "01-monkey-puzzle-tree",
+      "code": "teal-lantern-227",
+      "clue": {
+        "text": "Begin with the thing that does not quite belong here: ancient, armored, and called by a name that sounds more like a warning than a plant label.\n\nAraucaria araucana.",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I1-monkey.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Yes.\n\nSome things never fully settle, even after years in the ground.\n\n-------\n"
+    },
+    {
+      "label": "02-old-chicken-shed-wood-shed",
+      "code": "solar-rug-318",
+      "clue": {
+        "text": "Now look for a structure that changed duties without losing its shape. Timber rests where life once scratched and nested. A domestic afterlife made of boards, dust, and memory.",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I4-shed.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Correct.\n\n-------\n"
+    },
+    {
+      "label": "03-old-gum-tree",
+      "code": "copper-signal-641",
+      "clue": {
+        "text": "Find the oldest authority on the property. Not the house, not the people. The one that has hosted wings and hives and outlasted every plan made around it.",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I3-tree.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Good.\n\n-------\n"
+    },
+    {
+      "label": "04-round-tree-seat",
+      "code": "violet-kernel-904",
+      "clue": {
+        "text": "Seek the circle built not around people, but around a trunk. Iron lace. A ring of pause. Something ornamental that feels, on second look, a little too much like containment.",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I5-seat.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Yes.\n\n-------\n"
+    },
+    {
+      "label": "05-bird-house",
+      "code": "marzipan-vector-552",
+      "clue": {
+        "text": "Find the weathered little settlement raised above the ground. Too many openings. Too much ambition. Less a nest than a small white dwelling built for witnesses.",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I2-bird.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "You've found it.\n\n-------\n"
+    },
+    {
+      "label": "06-mums-studio-finish",
+      "code": "glow-orbit-808",
+      "clue": {
+        "text": "For the last place, go where the house thins out into something more private. Look for the room where gold is worked into holy faces, and where a green leather couch sits slightly out of time, as if it remembers another life indoors.",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E1I6-icon.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": ""
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "experience_key": "experience_two",
+  "start_trigger": "Hop to it",
+  "commands": {
+    "reset": ["reset"],
+    "status": ["status"],
+    "help": ["help", "menu"]
+  },
+  "game": {
+    "help_text": "Send the code when you find it!\n\nRESET to start again.",
+    "already_finished_text": "All done!\n\nRESET to play again.",
+    "not_started_text": "Say \"Hop to it\" to begin!",
+    "wrong_sequence_text": "Not yet!\n\nLook again 👀",
+    "unknown_input_text": "Hmm 🤔\n\nFind the clue!"
+  },
+  "start": {
+    "intro_text": "Ready?\n\nLet’s go!"
+  },
+  "finish": {
+    "text": "You did it!\n\nFind your eggs 🥚",
+    "media": {
+      "url": "https://evamicich.github.io/easter-hunt-assets/videos/E2V2-Close.mp4",
+      "type": "video"
+    }
+  },
+  "checkpoints": [
+    {
+      "label": "lion",
+      "code": "mane",
+      "clue": {
+        "text": "Do you know?",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/videos/E2V1-Intro.mp4",
+          "type": "video"
+        }
+      },
+      "success_text": "Nice!\n—"
+    },
+        {
+      "label": "fountain",
+      "code": "splash",
+      "clue": {
+        "text": "Another lion that splashes",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E2I4-fountain.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Great!\n—"
+    },
+        {
+      "label": "bench",
+      "code": "perch",
+      "clue": {
+        "text": "A quiet place",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E2I5-bench.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Wow!\n—"
+    },
+    {
+      "label": "house",
+      "code": "gable",
+      "clue": {
+        "text": "Find my tiny holiday home",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E2I2-house.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Good!\n—"
+    },
+    {
+      "label": "dog",
+      "code": "paws",
+      "clue": {
+        "text": "Find this friend",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E2I3-dog.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Yay!\n—"
+    },
+    {
+      "label": "palms",
+      "code": "fronds",
+      "clue": {
+        "text": "Look for tall trees",
+        "media": {
+          "url": "https://evamicich.github.io/easter-hunt-assets/images/E2I6-palms.jpg",
+          "type": "image"
+        }
+      },
+      "success_text": "Done!\n—"
+    }
+  ]
+}

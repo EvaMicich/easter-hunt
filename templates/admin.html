@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <title>Easter Hunt Dashboard</title>
+  <meta http-equiv="refresh" content="5">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #f5f5f5; }
+    .done { color: green; font-weight: bold; }
+    .running { color: #555; }
+    button { padding: 6px 10px; }
+  </style>
+</head>
+<body>
+
+<h1>Easter Hunt Dashboard</h1>
+
+<table>
+  <tr>
+    <th>Phone</th>
+    <th>Experience</th>
+    <th>Step</th>
+    <th>Checkpoint</th>
+    <th>Started</th>
+    <th>Finished</th>
+    <th>Total</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+
+  {% for row in rows %}
+  <tr>
+    <td>{{ row.phone }}</td>
+    <td>{{ row.experience or "" }}</td>
+    <td>{{ row.step_index }}</td>
+    <td>{{ row.checkpoint or "" }}</td>
+    <td>{{ row.started_at or "" }}</td>
+    <td>{{ row.finished_at or "" }}</td>
+    <td>
+      {% if row.total_time %}
+        {{ row.total_time }}
+      {% elif row.elapsed_time %}
+        {{ row.elapsed_time }}
+      {% else %}
+        
+      {% endif %}
+    </td>
+    <td>
+      {% if row.finished %}
+        <span class="done">Finished</span>
+      {% else %}
+        <span class="running">In progress</span>
+      {% endif %}
+    </td>
+    <td>
+      <form method="post" action="/admin/reset/{{ row.phone }}">
+        <button type="submit">Reset</button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>

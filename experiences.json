@@ -1,0 +1,12 @@
+{
+  "experiences": [
+    {
+      "key": "experience_one",
+      "config_file": "experience-one.json"
+    },
+    {
+      "key": "experience_two",
+      "config_file": "experience-two.json"
+    }
+  ]
+}
